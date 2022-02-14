@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Final Project</title>
+</head>
+<body bgcolor="HoneyDew">
+
+<h1> Final Project Home Page </h1>
+<h3> Hospital Management </h3>
+<p>
+Kaetlyn Gibson <br>
+CIS451, Fall 2020
+</p>
+<hr>
+
+<h3> Summary </h3>
+<p>
+  The topic of interest is designing a basic model of a hospital management system.
+  There are the included tables: patient, room, hospital, employee, scheduled hours,
+  diagnosis results, bills, and tables describing nurse shifts and doctor shifts.
+  More specific details about table attributes can be found in the Physical Design/Table Contents section.
+  One such example would be a patient, who has describing attributes such as name, age, sex,
+  and status, but who is also connected to where they are staying, how much they will be paying,
+  as well as their diagnosis and who cared for them.
+<br>
+<br>
+  Applications included in this model are: <br>
+  1a) calculating patient bill total <br>
+  1b) what makes up that bill <br>
+  2) given a hospital, show where patients are located <br>
+  3) given a hospital, show when and where a nurse employee works and for how many hours for a single week <br>
+  4) given a hospital, show when and where a doctor employee works and for how many hours for a single week <br>
+  5) given a patient, show what their diagnosis is, status is, what hospital they are located, and what doctor diagnosed them
+</p>
+<hr>
+
+<h3> Logical Design </h3>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/ERDiagram.html" target="_self"> My ER diagram. </a>
+<hr>
+<h3> Physical Design/Table Contents </h3>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/bill_table.html" target="_self"> 1. Bill table </a>
+<p> describes each transaction (cost, description) for a patient's bill </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/patient_table.html" target="_self"> 2. Patient table </a>
+<p> describes each patient, including name, age, sex, status, and the room_id they are staying </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/employee_table.html" target="_self"> 3. Employee table </a>
+<p> describes each employee, including name, specialization (nurse/doctor), and hospital_id they are working </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/hospital_table.html" target="_self"> 4. Hospital table </a>
+<p> describes each hospital, including the name, address, city and state the hospital is located </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/room_table.html" target="_self"> 5. Room table </a>
+<p> describes each hospital room, including what wing it is located in (such as emergency room or surgery),
+    the hospital_id, and the name of the room </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/scheduledHoursAmt_table.html" target="_self"> 6. Scheduled Hours Amount table</a>
+<p> describes the amount of hours in a single generic week for each employee </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/diagnosisResults_table.html" target="_self"> 7. Diagnosis Results table </a>
+<p> describes the diagnosis results for each patient and the doctor that diagnosed the patient </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/doctorRounds_table.html" target="_self"> 8. Doctor Rounds table </a>
+<p> describes a shift for doctors, including what time of day and where they are assigned </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/nurseRounds_table.html" target="_self"> 9. Nurse Rounds table </a>
+<p> describes a shift for nurses, including what time of day and where they are assigned </p>
+<hr>
+
+<h3> User Guide </h3>
+<p>
+This is very easy to use. Simply click on an application below, and the page will prompt you to
+select a patient or hospital depending on application chosen. Hit submit and the query will
+work.
+</p>
+<hr>
+
+<h3> Links to different applications to perform: </h3>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/form.php?operation_id=1" target="_self"> 1. Patient bill (Op 1)</a>
+<p> uses tables patient, bill </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/form.php?operation_id=2" target="_self"> 2. Hospital and patient location (Op 2)</a>
+<p> uses tables patient, room, hospital </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/form.php?operation_id=3" target="_self"> 3. Hospital and nurse shifts (Op 3)</a>
+<p> uses tables employee, scheduledHoursAmt, nurseRounds, hospital </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/form.php?operation_id=4" target="_self"> 4. Hospital and doctor shifts (Op 4)</a>
+<p>  uses tables employee, scheduledHoursAmt, doctorRounds, hospital </p>
+<a href="http://ix.cs.uoregon.edu/~kaetlyng/final_project/form.php?operation_id=5" target="_self"> 5. Patient diagnosis and status (Op 5)</a>
+<p> uses tables patient, diagnosisResults, employee, hospital </p>
+<hr>
+
+<h3> Conclusion </h3>
+<p>
+If given more time, I would have liked to include more information in my tables,
+as well as gone more complex in my applications. More applications could have been
+included as well. Adding further customizability into the input for the applications
+would have been desirable. Improving the design of the pages in terms of aesthetics
+and functionality would have been a nice improvement.
+</p>
+
+<hr>
+<p>
+<a href="homePage.txt" >Contents</a>
+of this page.
+</p>
+
+</body>
+</html>
