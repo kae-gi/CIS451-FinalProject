@@ -6,6 +6,7 @@ CIS451, Fall 2020
 
 ## See the Project
 **Link:** http://ix.cs.uoregon.edu/~kaetlyng/final_project/homePage.html
+
 EDIT: Link is now dead
 
 ## Overview
