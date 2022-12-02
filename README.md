@@ -6,6 +6,7 @@ CIS451, Fall 2020
 
 ## See the Project
 **Link:** http://ix.cs.uoregon.edu/~kaetlyng/final_project/homePage.html
+EDIT: Link is now dead
 
 ## Overview
 **NOTE:** *SQL database no longer connected, so unfortunately there are no operations that can be performed for the applications. However, the code for these operations still exists.*
